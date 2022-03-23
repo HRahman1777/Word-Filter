@@ -1,0 +1,26 @@
+{
+  "name": "word-filter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Hasibur Rahman",
+  "email": "hasibur.cse7@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "2.4.1",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "8.2.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.0"
+  }
+}
