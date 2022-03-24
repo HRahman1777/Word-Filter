@@ -14,8 +14,12 @@ terminaldesign.options();
 
 // fetching word and letters from file
 const wordList = fetchFile.fetchFromFile('./Files/WordList.txt');
+
+/*
+// get present and not present letter from file (old version)
 const notPresentLetters = fetchFile.fetchFromFile('./Files/NotPresentLetters.txt');
 const presentLetters = fetchFile.fetchFromFile('./Files/PresentLetters.txt');
+*/
 
 // global variable to control logic
 let previousResult = [];
@@ -25,7 +29,7 @@ const failedString = 'Sorry, Not Found! Please try again with proper way!';
 
 while (loopMe) {
     // read from terminal
-    const chosenKey = readlineSync.question(chalk.red.bold('[0 for Exit] Choose -> '));
+    const chosenKey = readlineSync.question(chalk.red.bold('[7 for Menu - 0 for Exit] Choose -> '));
     skipPrint = false;
 
     switch (chosenKey) {
@@ -34,23 +38,31 @@ while (loopMe) {
             break;
 
         case '2':
-            previousResult = chosenWork.choiceTwo(wordList, presentLetters);
+            previousResult = chosenWork.choiceTwo(wordList);
             break;
 
         case '3':
-            previousResult = chosenWork.choiceThree(wordList, notPresentLetters);
+            previousResult = chosenWork.choiceThree(wordList);
             break;
 
         case '4':
-            previousResult = chosenWork.choiceFour(wordList, presentLetters, notPresentLetters);
+            previousResult = chosenWork.choiceFour(wordList);
+            break;
+
+        case '5':
+            chosenWork.choiceFive();
+            break;
+
+        case '6':
+            chosenWork.choiceSix();
+            break;
+
+        case '7':
+            terminaldesign.options();
             break;
 
         case '9':
-            previousResult = chosenWork.choiceNine(
-                previousResult,
-                presentLetters,
-                notPresentLetters,
-            );
+            previousResult = chosenWork.choiceNine(previousResult);
             break;
 
         case '0':
@@ -72,7 +84,10 @@ while (loopMe) {
         terminaldesign.goodBye();
     }
     if (!skipPrint) {
-        console.log(previousResult);
+        console.log('                       ');
+        if (previousResult.length !== 0) {
+            console.log(chalk.green(`-- Filter Result -- \n${previousResult}\n------------------`));
+        }
         console.log('                       ');
         console.log(chalk.blue.bold('===>>> 9 - Want to filter into this result <<<==='));
     }
