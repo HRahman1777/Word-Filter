@@ -4,9 +4,9 @@
 const readlineSync = require('readline-sync');
 const chalk = require('chalk');
 
-const fetchFile = require('./fetchFile');
-const terminaldesign = require('./terminalDesign');
-const chosenWork = require('./chosenWork');
+const fetchFile = require('./helper/fetchFile');
+const terminaldesign = require('./helper/terminalDesign');
+const chosenWork = require('./helper/chosenWork');
 
 // terminal design(info)
 terminaldesign.welcome();
