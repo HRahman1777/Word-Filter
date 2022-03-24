@@ -22,15 +22,4 @@ result.fetchFromFile = (path) => {
     return myArray;
 };
 
-result.writeInFile = (path, letters) => {
-    let myArray = [];
-    myArray = letters.split(/[^a-zA-Z]+/g).toString();
-    try {
-        fs.writeFileSync(path, myArray);
-    } catch (error) {
-        console.log(chalk.red(`Failed To Write File ${path} - ${error}`));
-    }
-    return myArray;
-};
-
 module.exports = result;
