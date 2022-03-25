@@ -99,11 +99,11 @@ Follow all instructions that appears after running this command.
 
 ## Screenshot
 
-Screen record video -> [click here]()
+### Screen recorded video -> [click here](https://youtu.be/34BmDkh1bqk)
 
 ### Main Console
 
- <img alt="Index" style="border-width:240" height="640" src="https://raw.githubusercontent.com/HRahman1777/Word-Filter/master/Screenshots/wfss.JPG" />
+ <img alt="Index" style="border-width:240" height="640" src="https://raw.githubusercontent.com/HRahman1777/Word-Filter/main/Screenshot/wfss.JPG" />
 
 ## Contact
 
