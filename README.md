@@ -40,7 +40,7 @@ Word Filter শব্দ দুইটি থেকে আমরা ধারণ�
 - (PRESENT LETTERS) বলতে কোন কোন বর্ণ কাংখিত শব্দে আছে,
 - (NOT-PRESENT LETTERS) কোন কোন বর্ন গুলো কাংখিত শব্দে নাই
 
-এই ফিল্টার সিস্টেমটা <a href='https://www.nytimes.com/games/wordle/index.html'>Wordle Game</a> থেকে অনুপ্রানিত হয়ে বানানো ক্ষদ্র চেষ্টা হয়েছে,
+এই ফিল্টার সিস্টেমটা <a href='https://www.nytimes.com/games/wordle/index.html'>Wordle Game</a> থেকে অনুপ্রানিত হয়ে Word-Filter type কিছু বানানোর ক্ষদ্র চেষ্টা করা হয়েছে,
 যদিও এইটা পুরপুরি <b>wordle solver</b> না তবে আশা করি word guess করতে বেশ সাহায্য করবে।
 
 ---
@@ -90,6 +90,10 @@ Go to a specific folder where you want to store project files then open terminal
     $ git clone https://github.com/HRahman1777/Word-Filter.git
     $ cd Word-Filter
     $ yarn install
+
+<b>OR</b>
+
+- Just download as a [ZIP](https://github.com/HRahman1777/Word-Filter/archive/refs/heads/main.zip) and extract
 
 #### Running the project
 
